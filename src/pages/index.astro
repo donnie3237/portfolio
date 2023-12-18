@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Top from '../components/Top.astro';
+import Header from '../components/Header.astro'
+import Love from '../components/Love.astro';
+import About from '../components/About.astro'
+import OpenSource from '../components/OpenSource.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="">
+		<Top/>
+		<Header/>
+		<div id="main" class="w-full">
+			<About/>
+			<OpenSource/>
+			<Love/>
+			<Footer/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	#main{
+		width: 80vw;
+		margin: 0 auto;
+		max-width: 1280px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	@media screen and (max-width:720px){
+		#main{
+			width: 90vw;
+			margin-left: 5vw;
+		}
+	}
+</style>
