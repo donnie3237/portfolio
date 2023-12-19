@@ -1,21 +1,35 @@
 ---
+import { stack } from "../stack";
+import {skill} from '../skill'
 ---
-<div class="w-[100%]" id="about">
+<div class="w-[100%] flex flex-col justify-center items-center" id="about">
     <img class="rounded-full w-44 my-10 mt-24" src="https://scontent.fbkk29-8.fna.fbcdn.net/v/t1.6435-9/202226726_2845957542321402_1786322980007875441_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7a1959&_nc_eui2=AeHNEMwa9MzFsdD_WrlNjRHTlTST_jWEgZCVNJP-NYSBkM3n0kzQoqrye3vpgNIQEiLlgrxsSNLi_nhTCAxh_gG3&_nc_ohc=NDxSez0HrIQAX-FEc58&_nc_ht=scontent.fbkk29-8.fna&oh=00_AfBU7vk840wPsqY7-SxaQEqIxOSLf0_FFJrUjjpJfS7gIQ&oe=65A794C5" alt="">
     <h1>About me</h1>
-    <p>Hello , My name is Paradorn Lungchoy. love to sleep all day all night i can sleep 24hours a day 😴 cuz sleep is my techical skill i belive in candy snack and food religion 😋. Nikola Tesla is my Idol⚡. I think Rxseboy is the best singer 🎶.</p>
-    <div class="stack rounded-md mt-10">
-        <div class="logo bg-slate-900">Dev stack</div>
+    <p class="w-[100%] text-center">Hello , My name is Paradorn Lungchoy. love to sleep all day all night i can sleep 24hours a day 😴 cuz sleep is my techical skill i belive in candy snack and food religion 😋. Nikola Tesla is my Idol⚡. I think Rxseboy is the best singer 🎶.</p>
+    <div class="stack rounded-md mt-10 py-10  flex flex-wrap px-5 justify-center">
+        <div class="logo bg-slate-900 font-bold">Dev stack</div>
+        {stack && stack.map((stack)=>(
+            <div class="w-[80px] h-[100px] my-5 mx-3">
+                <img src={stack.logo} class="h-[60px] w-auto mx-auto" alt="">
+                <h2 class="font-bold mx-auto w-[100%] text-center mt-5">{stack.name}</h2>
+            </div>
+        ))} 
     </div>
-    <div class="stack rounded-md mt-10" id="open">
-        <div class="logo bg-slate-900">Other skill</div>
+    <div class="stack rounded-md mt-10 py-10  flex flex-wrap px-5 justify-center" id="open">
+        <div class="logo bg-slate-900 font-bold">Other skill</div>
+        {skill && skill.map((stack)=>(
+            <div class="w-[80px] h-[100px] my-5 mx-3">
+                <img src={stack.logo} class="h-[60px] w-auto mx-auto" alt="">
+                <h2 class="font-bold mx-auto w-[100%] text-center mt-5">{stack.name}</h2>
+            </div>
+        ))}
     </div>
 </div>
 
 <style lang="scss">
     .stack{
         width: 100%;
-        height: 160px;
+        min-height: 160px;
         border: 1px solid rgb(97, 97, 97);
         position: relative;
         .logo{
