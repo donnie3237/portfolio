@@ -9,7 +9,7 @@ export default function Proj({}:any) {
           class='bg-[image:var(--image-url)]'>
             <div class="box hidden">
                 <h1 class="hidden">{result.name}</h1>
-                <a href="" class="hidden">{result.link}</a>
+                <a href={result.link} class="hidden">{result.link}</a>
             </div>
           </div>
         ))}

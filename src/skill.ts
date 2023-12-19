@@ -20,7 +20,23 @@ export const skill =[
         logo : '/skill/bi.png'
     },
     {
-        name : 'Slidev',
-        logo : '/skill/slidev.png'
+        name : 'Exel',
+        logo : '/skill/exel.png'
+    },
+    {
+        name : 'Autocad',
+        logo : '/skill/acad.png'
+    },
+    {
+        name : 'Solar',
+        logo : '/skill/solar.png'
+    },
+    {
+        name : 'Nuclear',
+        logo : '/skill/ray.png'
+    },
+    {
+        name : 'Handsome',
+        logo : '/skill/cool.png'
     },
 ]

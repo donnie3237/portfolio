@@ -1,7 +1,7 @@
 export const project = [
     {
         name: 'ecommerce',
-        link: 'wfwefwef',
+        link: 'https://ecommerce.dxse.site/',
         img: '/ecom.png'
     },
     {
@@ -11,12 +11,12 @@ export const project = [
     },
     {
         name: 'PDF',
-        link: 'wfwefwef',
+        link: 'https://pdf.dxse.site/',
         img: '/pdf.png'
     },
     {
         name: 'Energy',
-        link: 'wfwefwef',
+        link: 'Application',
         img: '/energy.png'
     },
     {
@@ -26,7 +26,7 @@ export const project = [
     },
     {
         name: 'data',
-        link: 'wfwefwef',
+        link: 'Application',
         img: '/data.png'
     },
     {
