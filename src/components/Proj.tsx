@@ -1,7 +1,7 @@
 import { project } from "../project"
 import './proj.scss'
-
-export default function Proj({}:any) {
+import { Component } from "solid-js";
+export default function Proj({}:any):Component {
   return (
     <div class="love grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 w-[100%]">
         {project && project.map((result) => (
