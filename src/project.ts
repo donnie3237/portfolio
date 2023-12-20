@@ -6,7 +6,7 @@ export const project = [
     },
     {
         name: 'Img classification',
-        link: 'wfwefwef',
+        link: 'https://dose-ai.netlify.app/',
         img: "/sample.png"
     },
     {
@@ -16,23 +16,23 @@ export const project = [
     },
     {
         name: 'Energy',
-        link: 'Application',
+        link: '/app/energy.msi',
         img: '/energy.png'
     },
     {
         name: 'Hotel',
-        link: 'wfwefwef',
+        link: 'https://hotel.dxse.site/',
         img: '/hotel.png'
     },
     {
         name: 'data',
-        link: 'Application',
+        link: '/app/data.msi',
         img: '/data.png'
     },
     {
         name: 'SlideShow',
-        link: 'wfwefwef',
-        img: '/sli.png'
+        link: 'https://present.dxse.site/',
+        img: '/slide.png'
     },
     {
         name: 'Map',

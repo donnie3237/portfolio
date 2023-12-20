@@ -79,4 +79,8 @@ export const stack = [
         name: "Mongoose",
         logo: "/stack/mongoose.png"
     },
+    {
+        name: "DOSE3",
+        logo: "/stack/dose3.svg"
+    },
 ]
