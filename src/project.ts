@@ -7,7 +7,7 @@ export const project = [
     {
         name: 'Img classification',
         link: 'https://dose-ai.netlify.app/',
-        img: "/sample.png"
+        img: "/classification.png"
     },
     {
         name: 'PDF',
@@ -41,7 +41,7 @@ export const project = [
     },
     {
         name: 'Chat bot',
-        link: 'wfwefwef',
-        img: '/sli.png'
+        link: 'https://ai.dxse.site/',
+        img: '/aip.png'
     },
 ]
