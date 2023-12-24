@@ -17,8 +17,6 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "astro": "^4.0.6",
-    "astro-compress": "^2.2.5",
-    "mailer": "^0.6.7",
     "node": "^21.2.0",
     "nodemailer": "^6.9.1",
     "sass": "^1.69.5",
