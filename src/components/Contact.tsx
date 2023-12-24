@@ -26,20 +26,20 @@ export default function Contact() {
       <div class="img w-[100%] md:w-[50%] md:h-full h-[250px] bg-red-600">
       </div>
       <div class="flex flex-col w-[100%] md:w-[50%] py-10 px-8 text-gray-100" onsubmit={submit}>
-        <label>Topic</label>
-        <select name="type" id="" class="select select-bordered w-full" value={type()} required onInput={(e) => setType(e.target.value)}>
+        <label for="topic">Topic</label>
+        <select name="type" id="topic" class="select select-bordered w-full" value={type()} required onInput={(e) => setType(e.target.value)}>
         <option value="" selected disabled hidden>Choose topic</option>
           <option value="job">I have a custom job for you</option>
           <option value="ques">I have a Quesion</option>
           <option value="talk">I wanna talk to you</option>
           <option value="test">I just test this</option>
         </select>
-        <label>Name</label>
+        <label for="name">Name</label>
         <input type="text" class='input input-bordered w-full' id="name" name="name" placeholder='name' required value={name()} onInput={(e) => { setName(e.target.value) }} />
-        <label>Email</label>
+        <label for="email">Email</label>
         <input type="email" class='input input-bordered w-full' id="email" name="email" required value={email()} onInput={(e) => { setEmail(e.target.value) }} placeholder='email' />
-        <label>Message</label>
-        <input type="text" class='input input-bordered w-full' id="lname" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} placeholder='message'/>
+        <label for="message">Message</label>
+        <input type="text" class='input input-bordered w-full' id="message" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} placeholder='message'/>
         <button class="btn" onclick={submit}>Send</button>
       </div>
     </div>
