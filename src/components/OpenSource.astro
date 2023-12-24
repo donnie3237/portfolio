@@ -5,10 +5,16 @@
 <h1>Open Source</h1>
 <div class="flex md:flex-row flex-col">
     <div class="op img md:mr-[1%] w-[100%] md:w-[49%] ">
-        <a href="https://dose3.dxse.site/" class="hidden w-[100%] h-[100%] bg-black opacity-[0.9] text-center justify-center items-center">https://dose3.dxse.site/</a>
+        <div class="hh hidden">
+            <h1>Dose3</h1>
+            <a href="https://dose3.dxse.site/" class="">https://dose3.dxse.site/</a>
+        </div>
     </div>
     <div class="op img1 md:mt-0 md:ml-[1%] mt-4 w-[100%] md:w-[49%]">
-        <a href="https://book.dxse.site/" class="hidden w-[100%] h-[100%] justify-center items-center bg-black opacity-[0.9]">https://book.dxse.site/</a>
+        <div class="hh hidden">
+            <h1>Book</h1>
+            <a href="https://book.dxse.site/" class="">https://book.dxse.site/</a>
+        </div>
     </div>
 </div>
 <br id="proj">
@@ -31,8 +37,19 @@
     .op{
         background-position: center;
         transition: all 0.3s;
-        a{
-            
+        &:hover{
+            .hh{
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(0, 0, 0,0.9);
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                a{
+                    border: 1px solid white;
+                    padding: 10px 20px;
+                }
+            }
         }
         &:hover{
             background-size: 110%;

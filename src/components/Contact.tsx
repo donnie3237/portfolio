@@ -9,25 +9,30 @@ export default function Contact() {
   const [message, setMessage] = createSignal('')
 
   async function submit() {
-    await axios.post('https://doseserver.vercel.app/mail', {
-      type: type(),
-      name: name(),
-      email: email(),
-      message: message()
-    })
-    setType('')
-    setMessage('')
-    setName('')
-    setEmail('')
+    if (name() !== '' && email() !== '' && message() !== '') {
+      await axios.post('https://doseserver.vercel.app/mail', {
+        type: type(),
+        name: name(),
+        email: email(),
+        message: message()
+      })
+      setType('')
+      setMessage('')
+      setName('')
+      setEmail('')
+      alert('thank you')
+    }else{
+      alert('.....')
+    }
   }
   return (
     <div class="contact w-[90vw] bg-white h-[100%] md:h-[500px] min-h-[500px] mt-4 flex text-blue-950 flex-col md:flex-row">
       <div class="img w-[100%] md:w-[50%] md:h-full h-[250px] bg-red-600">
       </div>
-      <div class="flex flex-col w-[100%] md:w-[50%] py-10 px-8 text-gray-100" onsubmit={submit}>
+      <from class="flex flex-col w-[100%] md:w-[50%] py-10 px-8 text-gray-100">
         <label for="topic">Topic</label>
         <select name="type" id="topic" class="select select-bordered w-full" value={type()} required onInput={(e) => setType(e.target.value)}>
-        <option value="" selected disabled hidden aria-label="type">Choose topic</option>
+          <option value="" selected disabled hidden aria-label="type">Choose topic</option>
           <option value="job">I have a custom job for you</option>
           <option value="ques">I have a Quesion</option>
           <option value="talk">I wanna talk to you</option>
@@ -38,9 +43,9 @@ export default function Contact() {
         <label for="email">Email</label>
         <input type="email" class='input input-bordered w-full' id="email" name="email" required value={email()} onInput={(e) => { setEmail(e.target.value) }} placeholder='email' />
         <label for="message">Message</label>
-        <input type="text" class='input input-bordered w-full' id="message" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} placeholder='message'/>
+        <input type="text" class='input input-bordered w-full' id="message" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} placeholder='message' />
         <button class="btn" onclick={submit}>Send</button>
-      </div>
+      </from>
     </div>
   )
 }
