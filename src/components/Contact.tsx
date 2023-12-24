@@ -1,7 +1,6 @@
 import './contact.scss'
-import nodemailer from 'nodemailer'
 import axios from 'axios'
-import { createSignal, createResource, Suspense } from "solid-js";
+import { createSignal } from "solid-js";
 
 export default function Contact() {
   const [type, setType] = createSignal('job')
@@ -28,7 +27,7 @@ export default function Contact() {
       <div class="flex flex-col w-[100%] md:w-[50%] py-10 px-8 text-gray-100" onsubmit={submit}>
         <label for="topic">Topic</label>
         <select name="type" id="topic" class="select select-bordered w-full" value={type()} required onInput={(e) => setType(e.target.value)}>
-        <option value="" selected disabled hidden>Choose topic</option>
+        <option value="" selected disabled hidden aria-label="type">Choose topic</option>
           <option value="job">I have a custom job for you</option>
           <option value="ques">I have a Quesion</option>
           <option value="talk">I wanna talk to you</option>
