@@ -7,5 +7,6 @@ const site = "https://dose3.dxse.site";
 // https://astro.build/config
 export default defineConfig({
   site,
+  output: 'server',
   integrations: [tailwind(), solidJs(), sitemap()]
 });
