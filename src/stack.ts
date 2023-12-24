@@ -29,7 +29,7 @@ export const stack = [
     },
     {
         name: "Prisma",
-        logo: "/stack/prisma.png"
+        logo: "/stack/pris.png"
     },
     {
         name: "Rust",
@@ -82,5 +82,9 @@ export const stack = [
     {
         name: "DOSE3",
         logo: "/stack/dose3.svg"
+    },
+    {
+        name: "Sentry",
+        logo: "/stack/sentry.png"
     },
 ]

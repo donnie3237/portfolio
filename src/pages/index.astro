@@ -5,10 +5,11 @@ import Header from '../components/Header.astro'
 import Love from '../components/Love.astro';
 import About from '../components/About.astro'
 import OpenSource from '../components/OpenSource.astro'
+import Contact from '../components/Contact.tsx';
 import Footer from '../components/Footer.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="dose">
 	<main class="">
 		<Top/>
 		<Header/>
@@ -16,6 +17,7 @@ import Footer from '../components/Footer.astro'
 			<About/>
 			<OpenSource/>
 			<Love/>
+			<Contact client:load/>
 			<Footer/>
 		</div>
 	</main>

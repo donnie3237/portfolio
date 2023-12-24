@@ -1,7 +1,7 @@
 export const skill =[
     {
         name : 'Electrical',
-        logo : '/skill/elec.png'
+        logo : '/skill/electric.png'
     },
     {
         name : 'Eng',
@@ -34,6 +34,10 @@ export const skill =[
     {
         name : 'Nuclear',
         logo : '/skill/ray.png'
+    },
+    {
+        name : 'Trello',
+        logo : '/skill/trello.png'
     },
     {
         name : 'Handsome',

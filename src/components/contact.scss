@@ -1,0 +1,26 @@
+.contact{
+    .img{
+        background: url('https://t4.ftcdn.net/jpg/05/47/85/67/360_F_547856771_Hsext3wnEmBbT2ZDo8TEuz6GYjTkdaTd.jpg');
+        background-size: cover;
+    }
+    select{
+        background-color: transparent;
+        color: black;
+    }
+    label{
+        margin-top: 10px;
+        color: black;
+        font-weight: 700;
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        margin-top: 5px;
+        background-color: transparent;
+        color: black;
+    }
+    .btn{
+        margin-top: 20px;
+        background-color: orange;
+    }
+}

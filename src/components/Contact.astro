@@ -1,0 +1,35 @@
+---
+// if (Astro.request.method === "POST") {
+//   try {
+//     // const data = await Astro.request.formData();
+//     // const name = data.get("username");
+//     // const email = data.get("email");
+//     // const password = data.get("password");
+//     // Do something with the data
+//     console.log('ummm');
+    
+//   } catch (error) {
+//     if (error instanceof Error) {
+//       console.error(error.message);
+//     }
+//   }
+// }
+---
+
+<div class="w-[90vw] bg-slate-950 rounded-md min-h-[300px] mt-10 flex flex-col">
+    <div class="img w-[50%] bg-slate-500 h-[100%]"></div>
+    <div class="from">
+        <h1>Talk to me</h1>
+        <form method="POST">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email" required>
+            <input type="submit" value="hello">
+        </form>
+    </div>
+</div>
+
+<style lang="scss">
+        input{
+            background-color: black;
+        }
+</style>
