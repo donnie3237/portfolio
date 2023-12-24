@@ -22,8 +22,8 @@ export default function Contact() {
     setEmail('')
   }
   return (
-    <div class="contact w-[90vw] bg-white min-h-[500px] mt-10 flex text-blue-950 flex-col md:flex-row">
-      <div class="img w-[100%] md:w-[50%] h-[500px] bg-red-600">
+    <div class="contact w-[90vw] bg-white h-[500px] min-h-[500px] mt-10 flex text-blue-950 flex-col md:flex-row">
+      <div class="img w-[100%] md:w-[50%] md:h-full h-[200px] bg-red-600">
       </div>
       <div class="flex flex-col w-[100%] md:w-[50%] py-10 px-8 text-gray-100" onsubmit={submit}>
         <label>Topic</label>
