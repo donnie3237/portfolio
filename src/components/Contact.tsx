@@ -4,7 +4,7 @@ import axios from 'axios'
 import { createSignal, createResource, Suspense } from "solid-js";
 
 export default function Contact() {
-  const [type, setType] = createSignal('')
+  const [type, setType] = createSignal('job')
   const [name, setName] = createSignal('')
   const [email, setEmail] = createSignal('')
   const [message, setMessage] = createSignal('')
@@ -36,9 +36,9 @@ export default function Contact() {
         <label>Name</label>
         <input type="text" class='input input-bordered w-full' id="name" name="name" placeholder='name' required value={name()} onInput={(e) => { setName(e.target.value) }} />
         <label>Email</label>
-        <input type="email" class='input input-bordered w-full' id="email" name="email" required value={email()} onInput={(e) => { setEmail(e.target.value) }} />
+        <input type="email" class='input input-bordered w-full' id="email" name="email" required value={email()} onInput={(e) => { setEmail(e.target.value) }} placeholder='email' />
         <label>Message</label>
-        <input type="text" class='input input-bordered w-full' id="lname" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} />
+        <input type="text" class='input input-bordered w-full' id="lname" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} placeholder='message'/>
         <button class="btn" onclick={submit}>Send</button>
       </div>
     </div>
