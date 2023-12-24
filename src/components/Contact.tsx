@@ -10,7 +10,7 @@ export default function Contact() {
   const [message, setMessage] = createSignal('')
 
   async function submit() {
-    await axios.post('http://localhost:8081/mail', {
+    await axios.post('https://doseserver.vercel.app/mail', {
       type: type(),
       name: name(),
       email: email(),
@@ -22,12 +22,13 @@ export default function Contact() {
     setEmail('')
   }
   return (
-    <div class="contact w-[90vw] bg-white h-[500px] min-h-[500px] mt-10 flex text-blue-950 flex-col md:flex-row">
-      <div class="img w-[100%] md:w-[50%] md:h-full h-[200px] bg-red-600">
+    <div class="contact w-[90vw] bg-white h-[100%] md:h-[500px] min-h-[500px] mt-4 flex text-blue-950 flex-col md:flex-row">
+      <div class="img w-[100%] md:w-[50%] md:h-full h-[250px] bg-red-600">
       </div>
       <div class="flex flex-col w-[100%] md:w-[50%] py-10 px-8 text-gray-100" onsubmit={submit}>
         <label>Topic</label>
         <select name="type" id="" class="select select-bordered w-full" value={type()} required onInput={(e) => setType(e.target.value)}>
+        <option value="" selected disabled hidden>Choose topic</option>
           <option value="job">I have a custom job for you</option>
           <option value="ques">I have a Quesion</option>
           <option value="talk">I wanna talk to you</option>
