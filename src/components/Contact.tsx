@@ -39,7 +39,6 @@ export default function Contact() {
           <p className="py-4">{text()}</p>
           <div className="modal-action">
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
               <button className="bg-secondary rounded-md text-white px-5 py-2">Close</button>
             </form>
           </div>
@@ -61,7 +60,7 @@ export default function Contact() {
         <input type="email" class='w-full' id="email" name="email" required value={email()} onInput={(e) => { setEmail(e.target.value) }} placeholder='email' />
         <label for="message">Message</label>
         <input type="text" class='w-full' id="message" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} placeholder='message' />
-        <button class="btn" onclick={submit}>Send</button>
+        <button class="btn text-white" onclick={submit}>Send</button>
       </from>
     </div>
   )
