@@ -9,7 +9,7 @@ import {skill} from '../skill'
     <div class="stack rounded-md mt-10 py-10  flex flex-wrap px-5 justify-center">
         <div class="logo bg-secondary font-bold">Dev tech stack</div>
         {stack && stack.map((stack)=>(
-            <div class="w-[80px] h-[100px] my-5 mx-3">
+            <div class="w-[80px] opacity-100 h-[100px] my-5 mx-3">
                 <img src={stack.logo} class="h-[60px] w-auto mx-auto" alt="">
                 <h2 class="font-bold mx-auto w-[100%] text-center mt-5">{stack.name}</h2>
             </div>
@@ -18,7 +18,7 @@ import {skill} from '../skill'
     <div class="stack rounded-md mt-10 py-10  flex flex-wrap px-5 justify-center" id="open">
         <div class="logo bg-secondary font-bold">Other skill</div>
         {skill && skill.map((stack)=>(
-            <div class="w-[80px] h-[100px] my-5 mx-3">
+            <div class="w-[80px] opacity-100 h-[100px] my-5 mx-3">
                 <img src={stack.logo} class="h-[60px] w-auto mx-auto" alt="">
                 <h2 class="font-bold mx-auto w-[100%] text-center mt-5">{stack.name}</h2>
             </div>
