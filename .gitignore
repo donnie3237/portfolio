@@ -19,3 +19,7 @@ package-lock.json
 
 # macOS-specific files
 .DS_Store
+
+.devicescript/
+.env.local/
+.env.*.local/

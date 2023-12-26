@@ -81,7 +81,7 @@ export const stack = [
     },
     {
         name: "DOSE3",
-        logo: "/stack/dose3.svg"
+        logo: "/stack/dose3s.png"
     },
     {
         name: "Sentry",

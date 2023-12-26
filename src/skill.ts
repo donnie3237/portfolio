@@ -5,7 +5,7 @@ export const skill =[
     },
     {
         name : 'Eng',
-        logo : '/skill/en.png'
+        logo : '/skill/en.jpg'
     },
     {
         name : 'Word',
