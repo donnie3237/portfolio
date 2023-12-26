@@ -4,9 +4,6 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				transparent: 'transparent',
-				black: '#000',
-				white: '#fff',
 				primary: "var(--color-primary)", // Your custom green
 				secondary: "var(--color-secondary)", // Your custom orange
 				line: "var(--color-line)", // Your custom orange
