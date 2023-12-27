@@ -8,6 +8,11 @@ export default function Contact() {
   const [name, setName] = createSignal('')
   const [email, setEmail] = createSignal('')
   const [message, setMessage] = createSignal('')
+  
+  const headers = {
+    "Content-Type": "application/json",
+    "x-api-key": "3237"
+  };
 
   async function submit() {
     if (name() !== '' && email() !== '' && message() !== '') {
@@ -16,7 +21,7 @@ export default function Contact() {
         name: name(),
         email: email(),
         message: message()
-      })
+      } , {headers})
       setType('')
       setMessage('')
       setName('')
@@ -30,6 +35,7 @@ export default function Contact() {
       modal.showModal()
     }
   }
+
   return (
     <div class="contact w-[90vw] bg-white h-[100%] md:h-[500px] min-h-[500px] mt-4 flex text-blue-950 flex-col md:flex-row">
       <div class="img w-[100%] md:w-[50%] md:h-full h-[250px] bg-red-600">
