@@ -5,6 +5,16 @@ export const project = [
         img: '/ecom.png'
     },
     {
+        name: 'Chat bot',
+        link: 'https://ai.dxse.site/',
+        img: '/aip.png'
+    },
+    {
+        name: 'SlideShow',
+        link: 'https://present.dxse.site/',
+        img: '/slide.png'
+    },
+    {
         name: 'Img classification',
         link: 'https://dose-ai.netlify.app/',
         img: "/classification.png"
@@ -30,18 +40,9 @@ export const project = [
         img: '/data.png'
     },
     {
-        name: 'SlideShow',
-        link: 'https://present.dxse.site/',
-        img: '/slide.png'
-    },
-    {
         name: 'Map',
         link: 'wfwefwef',
         img: '/sli.png'
     },
-    {
-        name: 'Chat bot',
-        link: 'https://ai.dxse.site/',
-        img: '/aip.png'
-    },
+    
 ]

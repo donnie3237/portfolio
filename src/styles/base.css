@@ -5,7 +5,7 @@
 @layer base{
     :root{
         --color-primary : rgb(48, 0, 88);
-        --color-secondary : rgb(10, 1, 44) ;
+        --color-secondary : rgb(0, 2, 28) ;
         --color-line : rgb(255, 255, 255) ;
     }
 }

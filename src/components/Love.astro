@@ -2,7 +2,7 @@
 import Proj from "./Proj.tsx";
 ---
 <div class="w-[100%] mt-5">
-    <br class="absolute left-0"/>
+    <br class="absolute left-0 max-w-[1280px]"/>
     <h1>My Love project</h1>
     <Proj client:load/>
 </div>
@@ -13,8 +13,9 @@ import Proj from "./Proj.tsx";
         margin: 30px 0;
         width: 100vw;
         transform: translateX(-5vw);
-        padding-left: 5vw;
+        margin-left: 5vw;
         left: 0;
         padding-top: 50px;
+        max-width: 1280px;
     }
 </style>
