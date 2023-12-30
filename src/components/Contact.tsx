@@ -8,6 +8,7 @@ export default function Contact() {
   const [name, setName] = createSignal('')
   const [email, setEmail] = createSignal('')
   const [message, setMessage] = createSignal('')
+  const [sending, setSending] = createSignal(false)
   
   const headers = {
     "Content-Type": "application/json",
@@ -16,6 +17,7 @@ export default function Contact() {
 
   async function submit() {
     if (name() !== '' && email() !== '' && message() !== '') {
+      await setSending(true)
       await axios.post('https://doseserver.vercel.app/mail', {
         type: type(),
         name: name(),
@@ -29,10 +31,12 @@ export default function Contact() {
       setText('Thankyou')
       const modal : any = document.getElementById('my_modal_5')
       modal.showModal()
+      setSending(false)
     }else{
       setText('.......')
       const modal : any = document.getElementById('my_modal_5')
       modal.showModal()
+      setSending(false)
     }
   }
 
@@ -66,7 +70,7 @@ export default function Contact() {
         <input type="email" class='w-full' id="email" name="email" required value={email()} onInput={(e) => { setEmail(e.target.value) }} placeholder='email' />
         <label for="message">Message</label>
         <input type="text" class='w-full' id="message" name="message" required value={message()} onInput={(e) => { setMessage(e.target.value) }} placeholder='message' />
-        <button class="btn text-white" onclick={submit}>Send</button>
+        <button class="btn text-white" onclick={submit} disabled={sending()}>{sending()? "sending..." : "send"}</button>
       </from>
     </div>
   )
