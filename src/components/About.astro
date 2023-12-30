@@ -3,10 +3,12 @@ import { stack } from "../stack";
 import {skill} from '../skill'
 ---
 <div class="w-[100%] flex flex-col justify-center items-center" id="about">
-    <img class="me rounded-full w-56 my-10 mt-24" src="/og/logo.jpg" alt="">
+    <div class="mine pb-20 px-10 bg-white text-black flex flex-col justify-center">
+    <img class="me bg-white rounded-full w-56 my-10 mx-auto" src="/og/logo.jpg" alt="">
     <h1>About me</h1>
     <p class="w-[100%] text-center">Hello , My name is Paradorn Lungchoy. love to sleep all day all night i can sleep 24hours a day 😴 cuz sleep is my techical skill i belive in candy snack and food religion 😋. Nikola Tesla is my Idol⚡. I think Rxseboy is the best singer 🎶.</p>
-    <div class="stack rounded-md mt-10 py-10  flex flex-wrap px-5 justify-center">
+    </div>
+    <div class="stack mt-10 py-10  flex flex-wrap px-5 justify-center">
         <div class="logo bg-secondary font-bold">Dev tech stack</div>
         {stack && stack.map((stack)=>(
             <div class="w-[80px] opacity-100 h-[100px] my-5 mx-3">
@@ -15,7 +17,7 @@ import {skill} from '../skill'
             </div>
         ))} 
     </div>
-    <div class="stack rounded-md mt-10 py-10  flex flex-wrap px-5 justify-center" id="open">
+    <div class="stack mt-10 py-10  flex flex-wrap px-5 justify-center" id="open">
         <div class="logo bg-secondary font-bold">Other skill</div>
         {skill && skill.map((stack)=>(
             <div class="w-[80px] opacity-100 h-[100px] my-5 mx-3">
@@ -27,6 +29,10 @@ import {skill} from '../skill'
 </div>
 
 <style lang="scss">
+    .mine{
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
     .me{
         border: 2px solid white;
     }

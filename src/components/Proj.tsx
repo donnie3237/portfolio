@@ -3,8 +3,8 @@ import './proj.scss'
 
 export default function Proj({}:any) {
   return (
-    <div class="love grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 w-[100%]">
-        {project && project.map((result) => (
+    <div class="love grid gap-5 md:grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3">
+        {project && project.map((result , i) => (
           <div  style={{'--image-url': `url(${result.img})`}} 
           class='bg-[image:var(--image-url)]'>
             <div class="box hidden">
