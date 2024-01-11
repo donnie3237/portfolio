@@ -4,7 +4,7 @@ import './proj.scss'
 export default function Proj({}:any) {
   return (
     <div class="love grid gap-3 md:grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3">
-        {project && project.map((result , i) => (
+        {project && project.map((result) => (
           <div  style={{'--image-url': `url(${result.img})`}} 
           class='bg-[image:var(--image-url)]'>
             <div class="box hidden">
