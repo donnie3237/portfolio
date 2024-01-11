@@ -20,11 +20,6 @@ export const project = [
         img: '/pdf.png'
     },
     {
-        name: 'Api-docs',
-        link: '/app/energy.msi',
-        img: '/energy.png'
-    },
-    {
         name: 'data',
         link: '/app/data.msi',
         img: '/data.png'
