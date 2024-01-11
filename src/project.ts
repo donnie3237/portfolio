@@ -15,24 +15,14 @@ export const project = [
         img: '/slide.png'
     },
     {
-        name: 'Img classification',
-        link: 'https://dose-ai.netlify.app/',
-        img: "/classification.png"
-    },
-    {
         name: 'PDF',
         link: 'https://pdf.dxse.site/',
         img: '/pdf.png'
     },
     {
-        name: 'Energy',
+        name: 'Api-docs',
         link: '/app/energy.msi',
         img: '/energy.png'
-    },
-    {
-        name: 'Hotel',
-        link: 'https://hotel.dxse.site/',
-        img: '/hotel.png'
     },
     {
         name: 'data',
