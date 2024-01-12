@@ -25,9 +25,9 @@ export const project = [
         img: '/data.png'
     },
     {
-        name: 'Map',
-        link: 'wfwefwef',
-        img: '/sli.png'
+        name: 'Date&Time',
+        link: 'https://calender-web.vercel.app/',
+        img: '/date.png'
     },
     
 ]
