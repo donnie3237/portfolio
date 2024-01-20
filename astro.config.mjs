@@ -8,11 +8,11 @@ import vercel from '@astrojs/vercel/serverless'
 // https://astro.build/config
 export default defineConfig({
   site,
-  integrations: [tailwind({ applyBaseStyles: false,}), solidJs(), sitemap()],
   output: 'server',
   adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
   }),
+  integrations: [tailwind({ applyBaseStyles: false,}), solidJs(), sitemap()],
 });
