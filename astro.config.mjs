@@ -13,6 +13,7 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
+    edgeMiddleware: true
   }),
   integrations: [tailwind({ applyBaseStyles: false,}), solidJs(), sitemap()],
 });
