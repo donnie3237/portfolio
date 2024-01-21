@@ -8,10 +8,10 @@ import vercel from '@astrojs/vercel/static'
 // https://astro.build/config
 export default defineConfig({
   site,
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    }
-  }),
+  // adapter: vercel({
+  //   webAnalytics: {
+  //     enabled: true,
+  //   }
+  // }),
   integrations: [tailwind({ applyBaseStyles: false,}), solidJs(), sitemap()],
 });
