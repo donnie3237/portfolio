@@ -28,7 +28,7 @@ export default function Contact({}:any){
       setMessage('')
       setName('')
       setEmail('')
-      setText('Thankyou')
+      setText('Thankyou i will send message to you later')
       const modal : any = document.getElementById('my_modal_5')
       modal.showModal()
       setSending(false)
@@ -45,7 +45,7 @@ export default function Contact({}:any){
       <div class="img w-[100%] md:w-[50%] md:h-full h-[250px] bg-red-600">
       <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box bg-primary text-white">
-          <h3 class="font-bold text-lg">Hello!</h3>
+          <h1 class="font-bold text-lg">Notice</h1>
           <p class="py-4">{text()}</p>
           <div class="modal-action">
             <form method="dialog">
