@@ -12,8 +12,7 @@ export default defineConfig({
   adapter: vercel({
     webAnalytics: {
       enabled: true,
-    },
-    edgeMiddleware: true
+    }
   }),
   integrations: [tailwind({ applyBaseStyles: false,}), solidJs(), sitemap()],
 });
