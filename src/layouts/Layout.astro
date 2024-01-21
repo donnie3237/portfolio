@@ -4,6 +4,9 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const description = 'Dose is the author of dose3, a bestselling sci-fi book series. On his portfolio website, you can find his latest works, blog posts, and contact information. Visit dose’s portfolio website today and discover his amazing stories and insights.'
+const ImageURL = '/og/logo.jpg'
 import "../styles/base.css"
 ---
 
@@ -11,11 +14,26 @@ import "../styles/base.css"
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Dose is the author of dose3, a bestselling sci-fi book series. On his portfolio website, you can find his latest works, blog posts, and contact information. Visit dose’s portfolio website today and discover his amazing stories and insights." />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" href="/stack/dose3s.png" />
+
+		<link rel='canonical' href={canonicalURL} />
 		<meta name="keywords" content="dose,book,fiction,dose3,dxse,blog"/>
 		<meta name="generator" content={Astro.generator} />
+
+		<meta property='og:type' content={'website'} />
+		<meta property='og:url' content={Astro.url} />
+		<meta property='og:title' content={title} />
+		<meta property='og:description' content={description} />
+		<meta property='og:image' content={ImageURL} />
+
+		<meta property='twitter:card' content='summary_large_image' />
+		<meta property='twitter:url' content={Astro.url} />
+		<meta property='twitter:title' content={title} />
+		<meta property='twitter:description' content={description} />
+		<meta property='twitter:image' content={ImageURL} />
+
 		<title>{title}</title>
 	</head>
 	<body class="bg-secondary">
