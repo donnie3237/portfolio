@@ -29,5 +29,15 @@ export const project = [
         link: 'https://calender-web.vercel.app/',
         img: '/date.png'
     },
+    {
+        name: 'LangingPage',
+        link: 'https://landing.dxse.site/',
+        img: '/landing.png'
+    },
+    {
+        name: 'Api-docs',
+        link: 'https://landing.dxse.site/',
+        img: '/landing.png'
+    },
     
 ]
