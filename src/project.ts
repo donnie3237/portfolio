@@ -39,5 +39,10 @@ export const project = [
         link: 'https://landing.dxse.site/',
         img: '/landing.png'
     },
+    {
+        name: 'Book',
+        link: 'https://book.dxse.site/',
+        img: '/book.png'
+    },
     
 ]
