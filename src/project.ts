@@ -36,13 +36,28 @@ export const project = [
     },
     {
         name: 'Api-docs',
-        link: 'https://landing.dxse.site/',
-        img: '/landing.png'
+        link: '#SOON',
+        img: '/swagger.png'
     },
     {
         name: 'Book',
         link: 'https://book.dxse.site/',
         img: '/book.png'
+    },
+    {
+        name: 'Single line',
+        link: '#SOON',
+        img: '/sl.jfif'
+    },
+    {
+        name: '3D green house',
+        link: '#SOON',
+        img: '/gh.jfif'
+    },
+    {
+        name: 'Energy model',
+        link: '#SOON',
+        img: '/en.jfif'
     },
     
 ]
