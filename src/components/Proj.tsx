@@ -1,9 +1,11 @@
 import { project } from "../project"
 import './proj.scss'
+import { Suspense } from "solid-js"
 
 export default function Proj({}:any) {
   return (
-    <div class="love grid gap-3 md:grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3">
+    <Suspense fallback={<h1>Loading...</h1>}>
+       <div class="love grid gap-3 md:grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3">
         {project && project.map((result) => (
           <div  style={{'--image-url': `url(${result.img})`}} 
           class='bg-[image:var(--image-url)]'>
@@ -14,5 +16,7 @@ export default function Proj({}:any) {
           </div>
         ))}
     </div>
+    </Suspense>
+   
   )
 }
