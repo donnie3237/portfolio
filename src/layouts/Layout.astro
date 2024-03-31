@@ -36,10 +36,29 @@ import "../styles/base.css"
 		<meta name="google-site-verification" content="AoeKziV9BPz0aYPvhbWEweN_v9DjeqX2JoC-2TvsOL8" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>{title}</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
 	</head>
 	<body class="bg-secondary">
+		<button id="h">hello</button>
 		<slot />
 	</body>
+	<script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+	<script>
+		const driver = window.driver.js.driver;
+		const driverObj = driver();
+		const hello = document.getElementById('h') as HTMLElement
+		hello.addEventListener('click',()=>{
+			driverObj.highlight({
+			element: "#ab",
+			popover: {
+				title: "Title",
+				description: "Description"
+			}
+			});
+		})
+		
+	</script>
 </html>
 <style is:global>
 	*{
@@ -64,3 +83,4 @@ import "../styles/base.css"
         margin-bottom: 10px;
     }
 </style>
+
