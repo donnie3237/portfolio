@@ -2,7 +2,7 @@ import { project } from "../project"
 import './proj.scss'
 import { Suspense } from "solid-js"
 
-export default function Proj({}:any) {
+export default function Proj() {
   return (
     <Suspense fallback={<h1>Loading...</h1>}>
        <div class="love grid gap-3 md:grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3">
@@ -17,6 +17,5 @@ export default function Proj({}:any) {
         ))}
     </div>
     </Suspense>
-   
   )
 }

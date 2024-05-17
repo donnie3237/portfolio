@@ -1,12 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Top from '../components/Top.astro';
-import Header from '../components/Header.astro'
 import Love from '../components/Love.astro';
-import About from '../components/About.astro'
 import OpenSource from '../components/OpenSource.astro'
-import Contact from '../components/Contact.tsx';
-import Picture from '../components/Picture.astro';
+import Contact from '../components/Contact.jsx';
 import Footer from '../components/Footer.astro';
 import "../styles/base.css"
 import Skill from '../components/Skill.astro';
@@ -24,7 +20,7 @@ import Skill from '../components/Skill.astro';
 			<Love/>
 			<Skill/>
 			<Contact client:load/>
-			<Picture/>
+			<a href="/image" class="bg-black my-5 px-10 py-1 text-white">MORE ABOUT ME</a>
 			<Footer/>
 		</div>
 	</main>

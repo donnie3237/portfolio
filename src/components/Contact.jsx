@@ -2,7 +2,7 @@ import './contact.scss'
 import axios from 'axios'
 import { createSignal } from "solid-js";
 
-export default function Contact({}:any){
+export default function Contact(){
   const [type, setType] = createSignal('job')
   const [text, setText] = createSignal('')
   const [name, setName] = createSignal('')
@@ -29,12 +29,12 @@ export default function Contact({}:any){
       setName('')
       setEmail('')
       setText('Thankyou i will send message to you later')
-      const modal : any = document.getElementById('my_modal_5')
+      const modal = document.getElementById('my_modal_5')
       modal.showModal()
       setSending(false)
     }else{
       setText('.......')
-      const modal : any = document.getElementById('my_modal_5')
+      const modal = document.getElementById('my_modal_5')
       modal.showModal()
       setSending(false)
     }
