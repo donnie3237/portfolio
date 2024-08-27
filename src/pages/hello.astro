@@ -1,0 +1,191 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Search from '../components/Search'
+---
+
+<Layout title="chrome">
+    <div
+        class="min-h-[100vh]"
+        x-data="{ team: [
+    {
+        avatar: 'https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ',
+        name: 'Youtube',
+    },
+    {
+        avatar: 'https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg',
+        name: 'X',
+        title: 'Software engineer',
+    },
+    {
+        avatar: 'https://randomuser.me/api/portraits/women/79.jpg',
+        name: 'Github',
+        title: 'Full stack engineer',
+    },
+    {
+        avatar: 'https://randomuser.me/api/portraits/women/63.jpg',
+        name: 'Lysa sandiago',
+        title: 'Head of designers',
+    },
+    {
+        avatar: 'https://randomuser.me/api/portraits/men/86.jpg',
+        name: 'Daniel martin',
+        title: 'Product designer',
+    },
+    {
+        avatar: 'https://randomuser.me/api/portraits/men/46.jpg',
+        name: 'Vicky tanson',
+        title: 'Product manager',
+    },
+    {
+        avatar: 'https://randomuser.me/api/portraits/men/29.jpg',
+        name: 'Nilson kalin',
+        title: 'DevOp engineer',
+    },
+    {
+        avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+        name: 'Tina watersone',
+        title: 'Brand designer',
+    },
+    ] }"
+    >
+        <section class="py-14">
+            <div class="max-w-screen-xl mx-auto px-4 text-center md:px-8">
+                <div class="max-w-xl mx-auto">
+                    <h3 class="text-green-700 text-6xl font-bold sm:text-4xl">
+                        HELLO DOSE
+                    </h3>
+                    <Search client:load/>
+                </div>
+                <div class="flex mt-7 justify-center">
+                    <div class="mr-6">
+                        <h3 class="text-left font-bold text-green-500">
+                            Social
+                        </h3>
+                        <ul class="flex flex-col items-start">
+                            <li class="underline">
+                                <a
+                                    href="https://www.youtube.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">YouTube</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://twitter.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">X (Twitter)</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://mail.google.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Gmail</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://www.facebook.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://www.reddit.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Reddit</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mr-6">
+                        <h3 class="text-left font-bold text-green-500">Stat</h3>
+                        <ul class="flex flex-col items-start">
+                            <li class="underline">
+                                <a
+                                    href="https://companiesmarketcap.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Marketcap</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://vx-underground.org/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">VX-underground</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://ght.creativemaybeno.dev/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">ght</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://web-frameworks-benchmark.netlify.app/result"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Web-bench</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://www.worldometers.info/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">WorldO</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://www.bloomberg.com/billionaires/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Billion</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mr-6">
+                        <h3 class="text-left font-bold text-green-500">Work</h3>
+                        <ul class="flex flex-col items-start">
+                            <li class="underline">
+                                <a
+                                    href="https://excalidraw.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Draw</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://www.draw.io/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Flowchart</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://vercel.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Vercel</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://chat.openai.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">GPT</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://bard.google.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Bard</a>
+                            </li>
+                            <li class="underline">
+                                <a
+                                    href="https://translate.google.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Translate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</Layout>
+
+

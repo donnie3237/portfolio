@@ -36,12 +36,20 @@ import "../styles/base.css"
 		<meta name="google-site-verification" content="AoeKziV9BPz0aYPvhbWEweN_v9DjeqX2JoC-2TvsOL8" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>{title}</title>
-
+		<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
 	</head>
 	<body class="bg-secondary">
 		<slot />
 	</body>
+	<script>
+		function searchGoogle() : void{
+			const query = document.getElementById('search-input').value as any;
+			const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+			// window.location.href = url;
+			console.log(query);
+		}
+	</script>
 </html>
 <style is:global>
 	*{
