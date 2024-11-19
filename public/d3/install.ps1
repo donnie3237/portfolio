@@ -1,6 +1,6 @@
 # Download the .exe file to the appropriate folder
 $exeUrl = "https://dxse.site/d3/dose3.exe"
-$installDir = [System.IO.Path]::Combine($env:ProgramFiles, "Dose3")
+$installDir = [System.IO.Path]::Combine($env:USERPROFILE, "AppData\Local\dose3")
 
 # Create directory if it doesn't exist
 if (-not (Test-Path $installDir)) {
