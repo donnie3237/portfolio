@@ -1,47 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Love from '../components/Love.astro';
-import OpenSource from '../components/OpenSource.astro'
-import Contact from '../components/Contact.jsx';
-import Footer from '../components/Footer.astro';
-import "../styles/base.css"
-import Skill from '../components/Skill.astro';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Shadow from "@/components/global/Shadow.astro";
+import Intro from "@/components/landing/Intro.astro";
+import Faq from "@/components/landing/Faq.astro";
+import Footer from "@/components/global/Footer.astro";
+import Pricing from "@/components/landing/Pricing.astro";
 ---
 
-<Layout title="Home | DOSE">
-	<main class="">
-		<div id="main" class="w-full">
-			<!-- <About/> -->
-			<div id="ab" class="w-[100vw] flex flex-col justify-center items-center px-[10vw] bg-white text-slate-900 h-[400px]">
-				<p class="w-[100%] text-center max-w-[1000px]">Hello , My name is Paradorn Lungchoy. love to sleep all day all night i can sleep 24hours a day 😴 cuz sleep is my techical skill i belive in candy snack and food religion 😋. Nikola Tesla is my Idol⚡. I think Rxseboy is the best singer 🎶.</p>
-				<a href="https://blog.dxse.site/" class="bg-black my-5 px-10 py-3 text-white">My Blog</a>
-			</div>
-			<OpenSource/>
-			<Love/>
-			<!-- <Skill/> -->
-			<a href="/cv.pdf" class="bg-white w-[100%] text-black shadow-sm text-center py-1">MY CV</a>
-			<Contact client:load/>
-			<Footer/>
-		</div>
-	</main>
-</Layout>
-
-<style>
-
-	#main{
-		width: 90vw;
-		margin: 0 auto;
-		max-width: 1280px;
-		
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-	@media screen and (max-width:720px){
-		#main{
-			width: 90vw;
-			margin-left: 5vw;
-		}
-	}
-</style>
+<BaseLayout>
+  <section class="relative overflow-hidden">
+    <Shadow />
+    <div class="p-8 lg:px-44 lg:py-24 2xl:px-24 relative">
+      <Intro />
+      <Pricing />
+      <!-- <Faq /> -->
+      <Footer />
+    </div>
+  </section>
+</BaseLayout>

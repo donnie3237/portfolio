@@ -1,0 +1,96 @@
+---
+import Text from "../fundations/elements/Text.astro";
+const faq = [
+  {
+    question: "What does the landing page redesign service include?",
+    answer:
+      "The service includes the redesign of up to 5 sections of your landing page. Streamer provides custom design tailored to your brand and goals, all completed within a 7 day turnaround time.",
+  },
+  {
+    question: "How much does the service cost?",
+    answer:
+      "The base service for redesigning up to 5 sections of your landing page costs $699. Each additional section beyond the initial 5 is priced at $99.",
+  },
+  {
+    question: "How long does the redesign process take?",
+    answer:
+      " Your landing page redesign will be completed within 5 business days from the start of the project.",
+  },
+  {
+    question: "What if I need more than 5 sections redesigned?",
+    answer:
+      "No problem! We can redesign additional sections beyond the initial 5. Each extra section is priced at $99.",
+  },
+  {
+    question: "How do we communicate during the project?",
+    answer:
+      "Streamer uses a Discord to ensure clear communication throughout the redesign process. ",
+  },
+  {
+    question: "What if I'm not satisfied with the design?",
+    answer:
+      "Your satisfaction is priority. Streamer offer revisions to ensure you're happy with the final result. Streamer works with you to make necessary adjustments within the scope of the project.",
+  },
+  {
+    question: "Do you offer refunds?",
+    answer:
+      "Due to the nature of our service and the immediate start of work, we don't offer refunds once the project has begun. However, we're committed to delivering a design that meets your needs and expectations.",
+  },
+];
+---
+
+<div
+  class="grid grid-cols-1 gap-4 md:grid-cols-3 border-x p-8 border-dashed border-zinc-300 dark:border-zinc-700"
+>
+  <div>
+    <Text
+      tag="h2"
+      variant="textXL"
+      class="tracking-tighter font-semibold text-black dark:text-white"
+    >
+      Frequently asked questions
+    </Text>
+    <div class="mt-2">
+      <Text tag="p" variant="textSM" class="text-zinc-500 dark:text-zinc-400">
+        Can't find your answer?
+        <br />
+        Send us and <Text
+          tag="a"
+          class="underline hover:text-black dark:text-white duration-200"
+          href="mailto:michael@andreuzza.com">email</Text
+        >
+      </Text>
+    </div>
+  </div>
+  <div class="lg:col-span-2 space-y-4">
+    {
+      faq.map((item) => (
+        <details class="w-full  group  ease-out duration-300   [&::details-content]:block [&::details-content]:overflow-hidden [&::details-content]:[block-size:0] [&::details-content]:transition-all [&::details-content]:transition-discrete [&::details-content]:ease-out [&::details-content]:duration-500 open:[&::details-content]:[block-size:calc-size(auto,size)]">
+          <summary class="flex   items-center justify-between list-none cursor-pointer">
+            <Text tag="p" variant="taxtBase" class="text-black dark:text-white">
+              {item.question}
+            </Text>
+            <Text
+              tag="span"
+              class="group-open:rotate-180 ease duration-300 opacity-60"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z" />
+              </svg>
+            </Text>
+          </summary>
+          <div class="pt-3 opacity-60">
+            <Text tag="p" variant="textSM" class="text-zinc-500 dark:text-zinc-400">
+              {item.answer}
+            </Text>
+          </div>
+        </details>
+      ))
+    }
+  </div>
+</div>
