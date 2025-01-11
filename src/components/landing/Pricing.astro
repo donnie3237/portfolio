@@ -39,9 +39,18 @@ const target = [
   },
 ];
 const listItems = [
-  "Dose3 starter kit",
-  "DoseUI css library",
-  "Enerdose solar application design",
+  {
+    item: "Dose3 starter kit",
+    link: "https://dose3.dossware.com",
+  },
+  {
+    item: "DoseUI css library",
+    link: "https://doseui.dossware.com",
+  },
+  {
+    item: "Enerdoss solar application design",
+    link: "https://enerdoss.dossware.com",
+  },
 ];
 ---
 
@@ -106,6 +115,9 @@ const listItems = [
       <Text tag="p" variant="textXS" class="2xl:text-base">
         I love to sleep all day all night i can sleep 24hours a day 😴 cuz sleep is my techical skill i belive in candy snack and food religion 😋. Nikola Tesla is my Idol⚡. I think Rxseboy is the best singer 🎶.
       </Text>
+      <Text tag="p" variant="textXS" class="2xl:text-base">
+        Learn more about me with my <a target="_blank" href="https://blog.dossware.com" class="text-blue-500">Blog</a>
+      </Text>
       <div
         class="inline-flex items-center gap-2 mt-1 text-black dark:text-white"
       >
@@ -128,16 +140,30 @@ const listItems = [
           class="flex flex-col mt-2 list-none list-inside text-zinc-700 dark:text-zinc-400 gap-y-2"
           role="list"
         >
+        {
+          listItems.map(({ item, link }) => (
+            <li class="flex gap-2 items-center 2xl:items-start">
+              <Text tag="p" variant="textSM" class="2xl:text.base">
+                <Text tag="span">—</Text>
+                <Text tag="span">
+                  {item}
+                  <a href={link} target="_blank" class="text-blue-500"> Link</a>
+                </Text>
+              </Text>
+            </li>
+          ))
+        }
+<!-- 
           {
             listItems.map((item) => (
               <li class="flex gap-2 items-center 2xl:items-start">
                 <Text tag="p" variant="textSM" class="2xl:text.base">
                   <Text tag="span">—</Text>
-                  <Text tag="span">{item}</Text>
+                  <Text tag="span">{item}<a href="" class="text-white">  Link</a> </Text>
                 </Text>
               </li>
             ))
-          }
+          } -->
         </ul>
       </div>
       <div class="flex mt-4 justify-center relative w-full">
