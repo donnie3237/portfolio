@@ -1,5 +1,5 @@
 # Download the .exe file to the appropriate folder
-$exeUrl = "https://dxse.site/d3/dose3.exe"
+$exeUrl = "https://ceo.dossware.com/d3/dose3.exe"
 $installDir = [System.IO.Path]::Combine($env:USERPROFILE, "AppData\Local\dose3")
 
 # Create directory if it doesn't exist
